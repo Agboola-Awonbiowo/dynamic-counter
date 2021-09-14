@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number counter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div id="body">
+		
+	</div>
+
+
+	
+
+	<script>
+		var body = document.getElementById('body').value;
+			var minus = document.createElement("button")
+			var plus = document.createElement("button")
+			minus.innerHTML = "-";
+			plus.innerHTML = "+";
+			var input = document.createElement("input");
+			input.id = "input"
+		    input.setAtrribute = ('type', 'number');
+			document.body.appendChild(minus).style.padding = "20px";;
+			document.body.appendChild(input).style.padding = "20px";
+			document.body.appendChild(input).style.margin = "10px";
+			document.body.appendChild(input).style.textAlign = "center";
+			document.body.appendChild(input).style.fontSize = "40px";
+			document.body.appendChild(plus).style.padding = "20px";
+
+			var colors = ['yellow', 'green', 'coral', 'blue', 'pink', 'indigo', 'purple', 'brown', 'orange', 'red'];
+			
+
+            
+            plus.addEventListener('click', function(){
+            	input.value = +input.value + 1
+            	document.getElementById('input').style.backgroundColor = colors[ parseInt(Math.random() * colors.length) ]; 
+
+            });
+
+            minus.addEventListener('click', function(){
+            	input.value = +input.value - 1
+            	document.getElementById('input').style.backgroundColor = colors[ parseInt(Math.random() * colors.length) ]; 
+
+            });
+
+
+			
+			
+			
+				
+				
+			
+
+			
+
+		
+		
+	</script>
+
+</body>
+</html>
